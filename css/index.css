@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/*border: 0;*/
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    margin-top: 2%;
 }
 ol, ul {
 	list-style: none;
@@ -101,7 +102,7 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box{
     width: 12.5%;
     height: 100px;
     background: black;
@@ -111,7 +112,12 @@ p {
     align-items: center;
     justify-content: center;
 }
-
+/*.middle-content .boxes{
+    display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}*/
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -144,3 +150,44 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+.header-img{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 1.5%;
+}
+nav{
+    display:flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-bottom: 2%;
+}
+nav .navbar{
+	width: 51%;
+	text-align: center;
+	display:flex;
+    justify-content: space-around;
+    padding-top: 1%;
+}
+nav a{
+    color:black;
+    text-decoration: none;
+}
+nav a:hover{
+    color:red;
+    text-decoration: underline overline;
+    text-decoration-style: dashed;
+}
+/*.box1{
+    background-color:teal
+}
+.box2{background-color: gold}
+.box3{background-color: cadetblue}
+.box4 {background-color:coral}
+.box5 {background-color: crimson}
+.box6 {background-color:forestgreen}
+.box7 {background-color:darkorchid}
+.box8 {background-color:hotpink}
+.box9 {background-color:indigo}
+.box10{background-color: dodgerblue}
+*/
+
